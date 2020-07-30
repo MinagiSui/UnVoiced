@@ -11,6 +11,7 @@ function textreset() {
 
 function list_speak(){
   var word = document.querySelector('.WordListButton').value;
+  
   speechSynthesis.speak(
     new SpeechSynthesisUtterance(word)
   );

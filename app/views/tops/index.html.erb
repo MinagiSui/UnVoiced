@@ -10,3 +10,11 @@
   <input type="button" onclick="textreset()" class="SpeakReset" value="リセット">
   <button onclick="speak()" class="OwnSpeakButton">発声</button>
 </div>
+
+<ul>
+  <% @wordlists.each do |list| %>
+    <button onclick="list_speak()" name="WordListButton" class="WordListButton" value=<%= list.word %> >
+    <%= list.word %>
+    </button>
+  <% end %>
+</ul>
