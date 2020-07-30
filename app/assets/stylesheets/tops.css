@@ -15,15 +15,16 @@
 .OwnSpeakButton{
   display: inline-block;
   color: #FFF;
-  background: #668ad8;
+  background: #386ddf;
   width: 40%;
   height: auto;
 }
 
-.wordlist{
+.word_list{
   display: inline-block;
   color: #FFF;
-  background: #668ad8;
+  background: #185c0b;
   width: 40%;
   height: auto;
+  text-align: center;
 }

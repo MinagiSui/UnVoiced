@@ -11,10 +11,12 @@
   <button onclick="speak()" class="OwnSpeakButton">発声</button>
 </div>
 
+<hr size="5" color="#0000">
+<p>以下の文章をコピーして上の入力欄に貼り付けてお使いください。</p>
 <ul>
   <% @wordlists.each do |list| %>
-    <button onclick="list_speak()" name="WordListButton" class="WordListButton" value=<%= list.word %> >
-    <%= list.word %>
-    </button>
+    <li>
+      <input type="text", value=<%= list.word %>, class="word_list", disabled="disabled" >
+    </li>
   <% end %>
 </ul>

@@ -8,11 +8,3 @@ function speak() {
 function textreset() {
   var reset_text = document.Speak.SpeakContents.value = "";
 }
-
-function list_speak(){
-  var word = document.querySelector('.WordListButton').value;
-  
-  speechSynthesis.speak(
-    new SpeechSynthesisUtterance(word)
-  );
-}
