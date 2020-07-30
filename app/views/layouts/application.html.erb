@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UnVoice</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= link_to(image_tag("UnVoice.svg", size: "200x60", alt: "UnVoice"), root_path ) %>
+    <div class="contact">
+      <%= link_to(image_tag("contact.svg", size: "100x30", alt: "お問い合わせ" ), contact_path )%>
+    </div>
+    <hr/>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+  <footer>
+    <hr/>
+    <p align="center">©2020 minagi_sui</p>
+  </footer>
+</html>

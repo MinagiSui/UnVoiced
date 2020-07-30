@@ -1,0 +1,12 @@
+<script src="voice.js"></script>
+
+
+<p>以下の入力欄に音声として発声したい内容を入力し、発声ボタンを押下してください。</p>
+<form name="Speak">
+<textarea name="SpeakContents" rows="5" placeholder="ここに会話したい内容を入力してください" 
+          class="SpeakContants"></textarea>
+</form>
+<div class="SpeakButton">
+  <input type="button" onclick="textreset()" class="SpeakReset" value="リセット">
+  <button onclick="speak()" class="OwnSpeakButton">発声</button>
+</div>
